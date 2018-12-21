@@ -1,0 +1,32 @@
+* {
+    -fx-font-family: sans-serif;
+}
+
+.title {
+    -fx-font-size: 55px;
+}
+
+.text {
+    -fx-font-size: 20px;
+}
+
+.buttons {
+    -fx-text-fill: white;
+    -fx-background-color: #3d405f;
+    -fx-border: none;
+    -fx-padding: 15px 32px;
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+
+}
+
+#dropDown {
+    -fx-font-size: 10px;
+}
+
+.bottomText {
+    
+}
