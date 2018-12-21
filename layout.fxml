@@ -1,0 +1,64 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ChoiceBox?>
+
+<GridPane fx:controller="SiteStats.Controller"
+          fx:id="gridPane"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <Label  styleClass="title"
+            alignment="CENTER"
+            text="Site Stats"
+            translateY="-20"
+            GridPane.rowIndex="0"
+            GridPane.columnSpan="2"/>
+
+    <Text   styleClass="text"
+            text="Upload a .csv file with a single column and header of 'Website'."
+            GridPane.rowIndex="1"
+            GridPane.columnSpan="2"/>
+
+    <Text   styleClass="text"
+            text="That column should be URLs to check in the Database"
+            GridPane.rowIndex="2"
+            GridPane.columnSpan="2"/>
+
+    <Button styleClass="buttons"
+            alignment="CENTER"
+            text="Pick a file"
+            onAction="#openFileChooser"
+            GridPane.rowIndex="4"
+            GridPane.columnIndex="0"/>
+
+    <ChoiceBox fx:id="dropDown"
+               styleClass="dropDowns"
+               GridPane.rowIndex="5"
+               GridPane.columnIndex="0"/>
+
+    <Button styleClass="buttons"
+            alignment="CENTER"
+            text="Run it!"
+            onAction="#askTheDB"
+            GridPane.rowIndex="6"
+            GridPane.columnIndex="0"/>
+
+    <TextArea fx:id="output"
+              GridPane.rowIndex="7"
+              GridPane.columnIndex="0"
+                prefHeight="300"
+                prefWidth="700"/>
+
+
+    <Text   styleClass="bottomText"
+            text= "&#169;2019 Erik Gratz &amp; Proper Media"
+            GridPane.rowIndex="8"
+            GridPane.columnIndex="0"
+            GridPane.valignment="BASELINE"/>
+
+
+<stylesheets><URL value="@res/style.css"/></stylesheets>
+</GridPane>
